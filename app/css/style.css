@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+#dropArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+}
+.done-box,
+.drop-in-box {
+  padding: 80px;
+  width: 500px;
+  height: 287px;
+  border-radius: 10px;
+  background-color: #f1f5f8;
+  color: #07bc9a;
+  text-align: center;
+
+  display: none;
+
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.done-box.ishow,
+.drop-in-box.ishow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.done-box.entry,
+.drop-in-box.entry {
+  opacity: 1;
+}
+
+.drop-in-box {
+  font-size: 90px;
+  text-align: center;
+  outline: 2px dashed #07bc9a;
+  outline-offset: -15px;
+  transition: opacity 0.3s linear, outline-offset .15s ease-in-out, background-color .15s linear;
+}
+
+.drop-in-box.is-dragover {
+  outline-offset: -30px;
+  background-color: white;
+}
+
+.drop-in-box p {
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.done-box {
+  font-size: 30px;
+}
+
+.box.has-advanced-upload {
+  background-color: white;
+}
+
+.sidebar {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100%;
+
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.3s;
+  background: #f6f6f6;
+  padding-top: 30px;
+}
+.sidebar.open {
+  transform: translate3d(0, 0, 0);
+}
+.operate-btn {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  margin-right: -80px;
+  border-radius: 4px;
+  background: gray;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 10px;
+
+  opacity: 0.3;
+}
+.operate-btn:hover {
+  opacity: 0.6;
+}
+.operate-btn:before {
+  content: "\ea3c";
+}
+.open .operate-btn:before {
+  content: "\e901";
+}
