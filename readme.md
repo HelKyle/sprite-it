@@ -5,7 +5,7 @@
 
 ![demo](./demo.gif)
 
-[mac 下载地址](https://pan.baidu.com/s/1mimDQfY)
+[mac 下载地址](https://pan.baidu.com/s/1kUKVAZ1)
 
 ### Thanks
 TQ 大神好厉害 Orz。

@@ -11,7 +11,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  background: white;
+  background: #f4f6f9;
 }
 #dropArea {
   display: flex;
@@ -54,6 +54,7 @@ body {
   outline: 2px dashed #07bc9a;
   outline-offset: -15px;
   transition: opacity 0.3s linear, outline-offset .15s ease-in-out, background-color .15s linear;
+  box-shadow: 0 0 0 0.67px rgba(118,138,178,.3);
 }
 
 .drop-in-box.is-dragover {
@@ -86,8 +87,10 @@ body {
 
   transform: translate3d(-100%, 0, 0);
   transition: transform 0.3s;
-  background: #f6f6f6;
+  background: white;
   padding-top: 30px;
+
+  box-shadow: 0 0 1px rgba(0,0,0,.04) inset;
 }
 .sidebar.open {
   transform: translate3d(0, 0, 0);
@@ -96,7 +99,7 @@ body {
   position: absolute;
   right: 0;
   top: 20px;
-  margin-right: -80px;
+  margin-right: -60px;
   border-radius: 4px;
   background: gray;
   color: white;
